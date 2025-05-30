@@ -1,0 +1,67 @@
+<div class="admin-container">
+  <header class="admin-header">
+    <h1>Admin Dashboard</h1>
+    <div class="header-actions">
+      <span class="welcome">Welcome, Admin!</span>
+      <button class="btn-logout" (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="admin-content">
+    <div class="admin-cards">
+      <div class="admin-card">
+        <h3>Product Management</h3>
+        <p>Manage your product catalog</p>
+        <button class="btn-primary" (click)="goToProducts()">
+          View Products
+        </button>
+      </div>
+
+      <div class="admin-card">
+        <h3>User Management</h3>
+        <p>Manage system users</p>
+        <button class="btn-primary" disabled>
+          Coming Soon
+        </button>
+      </div>
+
+      <div class="admin-card">
+        <h3>Orders</h3>
+        <p>View and manage orders</p>
+        <button class="btn-primary" disabled>
+          Coming Soon
+        </button>
+      </div>
+
+      <div class="admin-card">
+        <h3>Analytics</h3>
+        <p>View sales and performance metrics</p>
+        <button class="btn-primary" disabled>
+          Coming Soon
+        </button>
+      </div>
+    </div>
+
+    <div class="quick-stats">
+      <h2>Quick Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">12</div>
+          <div class="stat-label">Total Products</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Orders Today</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$0</div>
+          <div class="stat-label">Revenue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
-import { AdminComponent } from './components/admin/admin.component';
+import { LoginComponent } from './components/user/login/login.component';
+import { ProductListComponent } from './components/product/product-list/product-list.component';
+import { AdminComponent } from './components/user/admin/admin.component';
 import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
