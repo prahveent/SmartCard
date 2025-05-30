@@ -1,0 +1,24 @@
+<div class="app-container">
+  <nav class="navbar">
+    <div class="nav-brand">
+      <h1>SmartCart</h1>
+    </div>
+    <div class="nav-links">
+      <a routerLink="/products" routerLinkActive="active">Products</a>
+      <a *ngIf="authService.isAuthenticated() && authService.isAdmin()" 
+         routerLink="/admin" 
+         routerLinkActive="active">Admin</a>
+      <a *ngIf="!authService.isAuthenticated()" 
+         routerLink="/login" 
+         routerLinkActive="active">Login</a>
+      <button *ngIf="authService.isAuthenticated()" 
+              (click)="logout()" 
+              class="logout-btn">Logout</button>
+    </div>
+  </nav>
+  
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+  

@@ -1,0 +1,80 @@
+# SmartCart Project .gitignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+Icon?
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Build outputs
+build/
+dist/
+out/
+
+# Dependency directories
+node_modules/
+
+# Package files
+*.tgz
+*.tar.gz
+
+# Database files (if any local databases are used)
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker volumes (if using docker-compose)
+.docker/
+
+# Documentation builds
+docs/_build/
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files
+*.zip
+*.rar
+*.7z
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+
+**/bin
+**/obj
